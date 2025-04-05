@@ -118,6 +118,8 @@ For each trained model, the following outputs are generated:
 - **Classification report**: Precision, recall, and F1-score for each class
 - **Grad-CAM visualizations**: Attention maps for sample images
 
+Model Weights and Outputs can be accessed <a href="https://1024terabox.com/s/1TejRvbL_CWLAmh9vPNwh2Q">here</a>
+
 ## Hardware Requirements
 
 The code is optimized for use with NVIDIA GPUs. Recommended hardware:
