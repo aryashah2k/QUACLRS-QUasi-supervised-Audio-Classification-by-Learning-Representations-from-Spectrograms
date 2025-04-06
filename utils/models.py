@@ -206,29 +206,67 @@ def create_convnext(num_classes, pretrained=True, freeze_features=False):
 
 def get_target_layer(model, model_name):
     """
-    Get the target layer for Grad-CAM visualization
+    Get the target layer for Grad-CAM visualization based on model architecture
     
     Args:
         model: The neural network model
         model_name: Name of the model architecture
         
     Returns:
-        target_layer: Layer to use for Grad-CAM
+        target_layer: The target layer for Grad-CAM
     """
+    # For each architecture, return the appropriate layer for GradCAM
     if model_name == 'alexnet':
-        return model.features[-1]
+        # Check if features are frozen
+        for param in model.features[-1].parameters():
+            if param.requires_grad:
+                return model.features[-1]
+        # If frozen, use classifier
+        return model.classifier[0]
     elif model_name == 'vgg16':
-        return model.features[-1]
+        # Check if features are frozen
+        for param in model.features[-1].parameters():
+            if param.requires_grad:
+                return model.features[-1]
+        # If frozen, use classifier
+        return model.classifier[0]
     elif model_name == 'resnet18':
-        return model.layer4[-1]
+        # Check if layer4 is frozen
+        for param in model.layer4[-1].parameters():
+            if param.requires_grad:
+                return model.layer4[-1]
+        # If frozen, use earlier layer with gradients or avgpool
+        return model.avgpool
     elif model_name == 'mobilenet':
-        return model.features[-1]
+        # For MobileNet, check if the features are frozen
+        # If frozen, we need to use an earlier layer that has gradients
+        for param in model.features[-1].parameters():
+            if param.requires_grad:
+                return model.features[-1]
+        # If all params in the last layer are frozen, use one of the classifier layers
+        return model.classifier[0]
     elif model_name == 'inception':
-        return model.Mixed_7c
+        # For InceptionV3, use the last Mixed layer before AuxLogits
+        # Check if it's frozen
+        for param in model.Mixed_7c.parameters():
+            if param.requires_grad:
+                return model.Mixed_7c
+        # If frozen, use AuxLogits (which should have gradients)
+        return model.AuxLogits.conv0
     elif model_name == 'efficientnet':
-        return model.features[-1]
+        # Check if features are frozen
+        for param in model.features[-1].parameters():
+            if param.requires_grad:
+                return model.features[-1]
+        # If frozen, use classifier
+        return model.classifier[0]
     elif model_name == 'convnext':
-        return model.features[-1]
+        # Check if features are frozen
+        for param in model.features[-1].parameters():
+            if param.requires_grad:
+                return model.features[-1]
+        # If frozen, use classifier
+        return model.classifier[0]
     else:
         raise ValueError(f"Unknown model name: {model_name}")
 
