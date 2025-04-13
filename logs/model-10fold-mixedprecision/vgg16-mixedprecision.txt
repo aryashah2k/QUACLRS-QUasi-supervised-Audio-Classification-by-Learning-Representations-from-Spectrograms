@@ -1,0 +1,339 @@
+(base) jupyter-st125462@puffer:~/ExtendedUrbansound$ python train_kfold.py --model_name vgg16 --pretrained --batch_size 64 --epochs 5 --use_amp
+
+================================================================================
+Training on Fold 1
+Train Folds: [2, 3, 4, 5, 6, 7, 8, 9]
+Val Fold: [10]
+Test Fold: [1]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/726 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 726/726 [02:49<00:00,  4.29it/s, loss=0.818, acc=73.5]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 90/90 [00:13<00:00,  6.80it/s]
+Epoch 1/5 - Train Loss: 0.8178, Train Acc: 73.50%, Val Loss: 1.2991, Val Acc: 67.04%, Best Val Acc: 67.04% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 726/726 [02:49<00:00,  4.29it/s, loss=0.162, acc=94.9]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 90/90 [00:13<00:00,  6.89it/s]
+Epoch 2/5 - Train Loss: 0.1616, Train Acc: 94.94%, Val Loss: 1.4224, Val Acc: 67.65%, Best Val Acc: 67.65% (Epoch 2)
+Epoch 3: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 726/726 [02:48<00:00,  4.30it/s, loss=0.0957, acc=97.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 90/90 [00:13<00:00,  6.79it/s]
+Epoch 3/5 - Train Loss: 0.0957, Train Acc: 97.05%, Val Loss: 1.7691, Val Acc: 66.24%, Best Val Acc: 67.65% (Epoch 2)
+Epoch 4: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 726/726 [02:49<00:00,  4.29it/s, loss=0.11, acc=96.8]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 90/90 [00:13<00:00,  6.82it/s]
+Epoch 4/5 - Train Loss: 0.1098, Train Acc: 96.85%, Val Loss: 1.3792, Val Acc: 67.28%, Best Val Acc: 67.65% (Epoch 2)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 726/726 [02:48<00:00,  4.30it/s, loss=0.0762, acc=97.7]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 90/90 [00:13<00:00,  6.72it/s]
+Epoch 5/5 - Train Loss: 0.0762, Train Acc: 97.71%, Val Loss: 1.6005, Val Acc: 68.12%, Best Val Acc: 68.12% (Epoch 5)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.65it/s]
+
+Fold 1 Evaluation:
+Test Loss: 1.4708, Test Accuracy: 66.36%
+
+================================================================================
+Training on Fold 2
+Train Folds: [3, 4, 5, 6, 7, 8, 9, 10]
+Val Fold: [1]
+Test Fold: [2]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/724 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.29it/s, loss=0.839, acc=70.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.56it/s]
+Epoch 1/5 - Train Loss: 0.8386, Train Acc: 70.08%, Val Loss: 1.3670, Val Acc: 68.35%, Best Val Acc: 68.35% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:49<00:00,  4.28it/s, loss=0.185, acc=94.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.63it/s]
+Epoch 2/5 - Train Loss: 0.1852, Train Acc: 94.09%, Val Loss: 2.0942, Val Acc: 66.59%, Best Val Acc: 68.35% (Epoch 1)
+Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.29it/s, loss=0.124, acc=96.2]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.51it/s]
+Epoch 3/5 - Train Loss: 0.1243, Train Acc: 96.17%, Val Loss: 1.5792, Val Acc: 74.51%, Best Val Acc: 74.51% (Epoch 3)
+Epoch 4: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.29it/s, loss=0.0854, acc=97.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.69it/s]
+Epoch 4/5 - Train Loss: 0.0854, Train Acc: 97.44%, Val Loss: 1.5963, Val Acc: 71.58%, Best Val Acc: 74.51% (Epoch 3)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.30it/s, loss=0.0848, acc=97.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.71it/s]
+Epoch 5/5 - Train Loss: 0.0848, Train Acc: 97.41%, Val Loss: 2.1325, Val Acc: 68.14%, Best Val Acc: 74.51% (Epoch 3)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.61it/s]
+
+Fold 2 Evaluation:
+Test Loss: 2.4477, Test Accuracy: 69.68%
+
+================================================================================
+Training on Fold 3
+Train Folds: [1, 4, 5, 6, 7, 8, 9, 10]
+Val Fold: [2]
+Test Fold: [3]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/724 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.29it/s, loss=0.851, acc=69.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.83it/s]
+Epoch 1/5 - Train Loss: 0.8509, Train Acc: 69.43%, Val Loss: 1.2618, Val Acc: 67.05%, Best Val Acc: 67.05% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.29it/s, loss=0.201, acc=93.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.59it/s]
+Epoch 2/5 - Train Loss: 0.2008, Train Acc: 93.63%, Val Loss: 1.5126, Val Acc: 69.63%, Best Val Acc: 69.63% (Epoch 2)
+Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.29it/s, loss=0.108, acc=96.7]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.65it/s]
+Epoch 3/5 - Train Loss: 0.1077, Train Acc: 96.68%, Val Loss: 1.8430, Val Acc: 69.75%, Best Val Acc: 69.75% (Epoch 3)
+Epoch 4: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.30it/s, loss=0.0994, acc=97.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.71it/s]
+Epoch 4/5 - Train Loss: 0.0994, Train Acc: 97.10%, Val Loss: 2.3649, Val Acc: 65.27%, Best Val Acc: 69.75% (Epoch 3)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 724/724 [02:48<00:00,  4.30it/s, loss=0.0805, acc=97.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.67it/s]
+Epoch 5/5 - Train Loss: 0.0805, Train Acc: 97.61%, Val Loss: 2.5290, Val Acc: 69.51%, Best Val Acc: 69.75% (Epoch 3)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.68it/s]
+
+Fold 3 Evaluation:
+Test Loss: 1.6586, Test Accuracy: 69.19%
+
+================================================================================
+Training on Fold 4
+Train Folds: [1, 2, 5, 6, 7, 8, 9, 10]
+Val Fold: [3]
+Test Fold: [4]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/723 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.29it/s, loss=0.735, acc=74.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.68it/s]
+Epoch 1/5 - Train Loss: 0.7347, Train Acc: 74.43%, Val Loss: 1.5077, Val Acc: 69.45%, Best Val Acc: 69.45% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:49<00:00,  4.27it/s, loss=0.168, acc=94.5]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.77it/s]
+Epoch 2/5 - Train Loss: 0.1684, Train Acc: 94.50%, Val Loss: 1.8576, Val Acc: 67.03%, Best Val Acc: 69.45% (Epoch 1)
+Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.28it/s, loss=0.115, acc=96.5]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.68it/s]
+Epoch 3/5 - Train Loss: 0.1147, Train Acc: 96.47%, Val Loss: 1.5693, Val Acc: 64.73%, Best Val Acc: 69.45% (Epoch 1)
+Epoch 4: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.29it/s, loss=0.0862, acc=97.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.71it/s]
+Epoch 4/5 - Train Loss: 0.0862, Train Acc: 97.39%, Val Loss: 1.7966, Val Acc: 66.68%, Best Val Acc: 69.45% (Epoch 1)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.28it/s, loss=0.0907, acc=97.3]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 91/91 [00:13<00:00,  6.71it/s]
+Epoch 5/5 - Train Loss: 0.0907, Train Acc: 97.26%, Val Loss: 2.0525, Val Acc: 63.73%, Best Val Acc: 69.45% (Epoch 1)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.76it/s]
+
+Fold 4 Evaluation:
+Test Loss: 1.7371, Test Accuracy: 66.56%
+
+================================================================================
+Training on Fold 5
+Train Folds: [1, 2, 3, 6, 7, 8, 9, 10]
+Val Fold: [4]
+Test Fold: [5]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/722 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.28it/s, loss=0.886, acc=68.3]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.73it/s]
+Epoch 1/5 - Train Loss: 0.8861, Train Acc: 68.27%, Val Loss: 1.5965, Val Acc: 68.89%, Best Val Acc: 68.89% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.28it/s, loss=0.212, acc=93.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.83it/s]
+Epoch 2/5 - Train Loss: 0.2125, Train Acc: 93.14%, Val Loss: 1.7770, Val Acc: 69.37%, Best Val Acc: 69.37% (Epoch 2)
+Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.28it/s, loss=0.12, acc=96.3]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.73it/s]
+Epoch 3/5 - Train Loss: 0.1197, Train Acc: 96.28%, Val Loss: 2.2037, Val Acc: 67.90%, Best Val Acc: 69.37% (Epoch 2)
+Epoch 4: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.29it/s, loss=0.0958, acc=97.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.62it/s]
+Epoch 4/5 - Train Loss: 0.0958, Train Acc: 97.08%, Val Loss: 2.2779, Val Acc: 67.44%, Best Val Acc: 69.37% (Epoch 2)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.30it/s, loss=0.0947, acc=97.3]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.76it/s]
+Epoch 5/5 - Train Loss: 0.0947, Train Acc: 97.31%, Val Loss: 2.1775, Val Acc: 66.17%, Best Val Acc: 69.37% (Epoch 2)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.69it/s]
+
+Fold 5 Evaluation:
+Test Loss: 2.7874, Test Accuracy: 61.32%
+
+================================================================================
+Training on Fold 6
+Train Folds: [1, 2, 3, 4, 7, 8, 9, 10]
+Val Fold: [5]
+Test Fold: [6]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/723 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.30it/s, loss=0.923, acc=68.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.71it/s]
+Epoch 1/5 - Train Loss: 0.9235, Train Acc: 68.59%, Val Loss: 1.8143, Val Acc: 61.30%, Best Val Acc: 61.30% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.29it/s, loss=0.228, acc=92.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:14<00:00,  6.51it/s]
+Epoch 2/5 - Train Loss: 0.2275, Train Acc: 92.56%, Val Loss: 2.7050, Val Acc: 62.03%, Best Val Acc: 62.03% (Epoch 2)
+Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.29it/s, loss=0.147, acc=95.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.68it/s]
+Epoch 3/5 - Train Loss: 0.1470, Train Acc: 95.44%, Val Loss: 1.6132, Val Acc: 62.12%, Best Val Acc: 62.12% (Epoch 3)
+Epoch 4: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.29it/s, loss=0.109, acc=96.7]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:14<00:00,  6.53it/s]
+Epoch 4/5 - Train Loss: 0.1092, Train Acc: 96.70%, Val Loss: 1.7602, Val Acc: 59.53%, Best Val Acc: 62.12% (Epoch 3)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 723/723 [02:48<00:00,  4.29it/s, loss=0.0862, acc=97.3]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.66it/s]
+Epoch 5/5 - Train Loss: 0.0862, Train Acc: 97.33%, Val Loss: 1.9350, Val Acc: 58.27%, Best Val Acc: 62.12% (Epoch 3)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.64it/s]
+
+Fold 6 Evaluation:
+Test Loss: 1.1653, Test Accuracy: 65.21%
+
+================================================================================
+Training on Fold 7
+Train Folds: [1, 2, 3, 4, 5, 8, 9, 10]
+Val Fold: [6]
+Test Fold: [7]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/722 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.29it/s, loss=0.8, acc=71.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:14<00:00,  6.46it/s]
+Epoch 1/5 - Train Loss: 0.7998, Train Acc: 71.55%, Val Loss: 1.1498, Val Acc: 68.22%, Best Val Acc: 68.22% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.28it/s, loss=0.171, acc=94.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.74it/s]
+Epoch 2/5 - Train Loss: 0.1709, Train Acc: 94.61%, Val Loss: 1.8506, Val Acc: 69.25%, Best Val Acc: 69.25% (Epoch 2)
+Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.29it/s, loss=0.106, acc=96.8]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.71it/s]
+Epoch 3/5 - Train Loss: 0.1065, Train Acc: 96.76%, Val Loss: 1.3790, Val Acc: 71.56%, Best Val Acc: 71.56% (Epoch 3)
+Epoch 4: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.29it/s, loss=0.101, acc=97.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.74it/s]
+Epoch 4/5 - Train Loss: 0.1008, Train Acc: 97.11%, Val Loss: 1.3243, Val Acc: 72.04%, Best Val Acc: 72.04% (Epoch 4)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 722/722 [02:48<00:00,  4.29it/s, loss=0.0618, acc=98.1]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.90it/s]
+Epoch 5/5 - Train Loss: 0.0618, Train Acc: 98.14%, Val Loss: 1.7411, Val Acc: 70.31%, Best Val Acc: 72.04% (Epoch 4)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:14<00:00,  6.40it/s]
+
+Fold 7 Evaluation:
+Test Loss: 1.1804, Test Accuracy: 72.89%
+
+================================================================================
+Training on Fold 8
+Train Folds: [1, 2, 3, 4, 5, 6, 9, 10]
+Val Fold: [7]
+Test Fold: [8]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/725 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 725/725 [02:49<00:00,  4.29it/s, loss=0.687, acc=75.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.77it/s]
+Epoch 1/5 - Train Loss: 0.6868, Train Acc: 75.64%, Val Loss: 1.1616, Val Acc: 68.90%, Best Val Acc: 68.90% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 725/725 [02:49<00:00,  4.29it/s, loss=0.147, acc=95.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:14<00:00,  6.57it/s]
+Epoch 2/5 - Train Loss: 0.1471, Train Acc: 95.39%, Val Loss: 1.1931, Val Acc: 73.23%, Best Val Acc: 73.23% (Epoch 2)
+Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 725/725 [02:48<00:00,  4.29it/s, loss=0.11, acc=96.7]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.66it/s]
+Epoch 3/5 - Train Loss: 0.1096, Train Acc: 96.67%, Val Loss: 1.9527, Val Acc: 69.59%, Best Val Acc: 73.23% (Epoch 2)
+Epoch 4: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 725/725 [02:48<00:00,  4.29it/s, loss=0.0869, acc=97.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.60it/s]
+Epoch 4/5 - Train Loss: 0.0869, Train Acc: 97.44%, Val Loss: 1.5817, Val Acc: 72.82%, Best Val Acc: 73.23% (Epoch 2)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 725/725 [02:48<00:00,  4.30it/s, loss=0.0808, acc=97.7]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:13<00:00,  6.58it/s]
+Epoch 5/5 - Train Loss: 0.0808, Train Acc: 97.73%, Val Loss: 1.6274, Val Acc: 69.15%, Best Val Acc: 73.23% (Epoch 2)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.45it/s]
+
+Fold 8 Evaluation:
+Test Loss: 1.1258, Test Accuracy: 70.61%
+
+================================================================================
+Training on Fold 9
+Train Folds: [1, 2, 3, 4, 5, 6, 7, 10]
+Val Fold: [8]
+Test Fold: [9]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/728 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 728/728 [02:49<00:00,  4.29it/s, loss=0.813, acc=71]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.67it/s]
+Epoch 1/5 - Train Loss: 0.8129, Train Acc: 71.02%, Val Loss: 1.3714, Val Acc: 61.99%, Best Val Acc: 61.99% (Epoch 1)
+Epoch 2: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 728/728 [02:49<00:00,  4.29it/s, loss=0.187, acc=94]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.45it/s]
+Epoch 2/5 - Train Loss: 0.1874, Train Acc: 94.02%, Val Loss: 1.3978, Val Acc: 68.93%, Best Val Acc: 68.93% (Epoch 2)
+Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 728/728 [02:49<00:00,  4.29it/s, loss=0.118, acc=96.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.52it/s]
+Epoch 3/5 - Train Loss: 0.1181, Train Acc: 96.37%, Val Loss: 1.3471, Val Acc: 65.45%, Best Val Acc: 68.93% (Epoch 2)
+Epoch 4: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 728/728 [02:49<00:00,  4.30it/s, loss=0.0877, acc=97.4]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.51it/s]
+Epoch 4/5 - Train Loss: 0.0877, Train Acc: 97.36%, Val Loss: 1.4813, Val Acc: 69.94%, Best Val Acc: 69.94% (Epoch 4)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 728/728 [02:49<00:00,  4.30it/s, loss=0.0908, acc=97.3]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.59it/s]
+Epoch 5/5 - Train Loss: 0.0908, Train Acc: 97.29%, Val Loss: 1.6795, Val Acc: 66.37%, Best Val Acc: 69.94% (Epoch 4)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.64it/s]
+
+Fold 9 Evaluation:
+Test Loss: 1.4331, Test Accuracy: 71.19%
+
+================================================================================
+Training on Fold 10
+Train Folds: [1, 2, 3, 4, 5, 6, 7, 8]
+Val Fold: [9]
+Test Fold: [10]
+================================================================================
+
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/jupyter-st125462/ExtendedUrbansound/train_kfold.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if args.use_amp else None
+Epoch 1:   0%|                                                                                                                          | 0/727 [00:00<?, ?it/s]/home/jupyter-st125462/ExtendedUrbansound/utils/training.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 727/727 [02:48<00:00,  4.30it/s, loss=0.957, acc=65.8]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.60it/s]
+Epoch 1/5 - Train Loss: 0.9566, Train Acc: 65.85%, Val Loss: 1.5079, Val Acc: 62.51%, Best Val Acc: 62.51% (Epoch 1)
+Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 727/727 [02:49<00:00,  4.29it/s, loss=0.198, acc=93.7]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.76it/s]
+Epoch 2/5 - Train Loss: 0.1984, Train Acc: 93.68%, Val Loss: 1.3755, Val Acc: 72.85%, Best Val Acc: 72.85% (Epoch 2)
+Epoch 3: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 727/727 [02:49<00:00,  4.30it/s, loss=0.127, acc=96]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.66it/s]
+Epoch 3/5 - Train Loss: 0.1268, Train Acc: 96.03%, Val Loss: 1.8663, Val Acc: 71.29%, Best Val Acc: 72.85% (Epoch 2)
+Epoch 4: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 727/727 [02:49<00:00,  4.29it/s, loss=0.1, acc=96.9]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.45it/s]
+Epoch 4/5 - Train Loss: 0.1004, Train Acc: 96.93%, Val Loss: 1.7845, Val Acc: 71.52%, Best Val Acc: 72.85% (Epoch 2)
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 727/727 [02:49<00:00,  4.29it/s, loss=0.0793, acc=97.6]
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89/89 [00:13<00:00,  6.58it/s]
+Epoch 5/5 - Train Loss: 0.0793, Train Acc: 97.65%, Val Loss: 1.5546, Val Acc: 70.34%, Best Val Acc: 72.85% (Epoch 2)
+Validating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 90/90 [00:13<00:00,  6.49it/s]
+
+Fold 10 Evaluation:
+Test Loss: 1.5532, Test Accuracy: 69.24%
+
+================================================================================
+Summary of results for vgg16
+================================================================================
+Average Test Accuracy: 68.23%
+Individual Fold Test Accuracies: [66.36159557934727, 69.6797520661157, 69.19243986254295, 66.56399726214921, 61.315610088616225, 65.21366054573537, 72.88941736028538, 70.613182541085, 71.18525021949078, 69.24287462843155]
+Summary saved to output/vgg16/summary.json
+Total execution time: 10150.61 seconds (2.82 hours)
