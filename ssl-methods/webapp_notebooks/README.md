@@ -9,7 +9,7 @@ MobileNetV3 Quick Glance:
 
 |Fold 1|Fold 10|
 |------|-------|
-|![confusion]()|![confusion]()|
-|![metrics]()|![metrics]()|
+|![confusion](https://github.com/aryashah2k/QUACLRS-QUasi-supervised-Audio-Classification-by-Learning-Representations-from-Spectrograms/blob/main/ssl-methods/webapp_notebooks/results/fold_1_confusion.png)|![confusion](https://github.com/aryashah2k/QUACLRS-QUasi-supervised-Audio-Classification-by-Learning-Representations-from-Spectrograms/blob/main/ssl-methods/webapp_notebooks/results/fold_10_confusion.png)|
+|![metrics](https://github.com/aryashah2k/QUACLRS-QUasi-supervised-Audio-Classification-by-Learning-Representations-from-Spectrograms/blob/main/ssl-methods/webapp_notebooks/results/fold_1_metrics.png)|![metrics](https://github.com/aryashah2k/QUACLRS-QUasi-supervised-Audio-Classification-by-Learning-Representations-from-Spectrograms/blob/main/ssl-methods/webapp_notebooks/results/fold_10_metrics.png)|
 
 Fold selected for web-app: Fold 10
