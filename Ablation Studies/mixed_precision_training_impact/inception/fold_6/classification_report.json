@@ -1,0 +1,93 @@
+{
+    "air_conditioner": {
+        "precision": 0.3154981549815498,
+        "recall": 0.38084632516703787,
+        "f1-score": 0.34510595358224017,
+        "support": 449.0
+    },
+    "ambulance": {
+        "precision": 0.8904382470119522,
+        "recall": 0.9955456570155902,
+        "f1-score": 0.9400630914826499,
+        "support": 449.0
+    },
+    "car_horn": {
+        "precision": 0.9907834101382489,
+        "recall": 0.6398809523809523,
+        "f1-score": 0.7775768535262206,
+        "support": 336.0
+    },
+    "children_playing": {
+        "precision": 0.8032407407407407,
+        "recall": 0.7728285077951003,
+        "f1-score": 0.7877412031782066,
+        "support": 449.0
+    },
+    "dog_bark": {
+        "precision": 0.7440585009140768,
+        "recall": 0.9064587973273942,
+        "f1-score": 0.8172690763052208,
+        "support": 449.0
+    },
+    "drilling": {
+        "precision": 0.8788927335640139,
+        "recall": 0.5657015590200446,
+        "f1-score": 0.6883468834688347,
+        "support": 449.0
+    },
+    "engine_idling": {
+        "precision": 0.3686746987951807,
+        "recall": 0.6815144766146993,
+        "f1-score": 0.47849882720875686,
+        "support": 449.0
+    },
+    "firetruck": {
+        "precision": 0.9562363238512035,
+        "recall": 0.9732739420935412,
+        "f1-score": 0.9646799116997793,
+        "support": 449.0
+    },
+    "gun_shot": {
+        "precision": 0.8860353130016051,
+        "recall": 1.0,
+        "f1-score": 0.9395744680851064,
+        "support": 552.0
+    },
+    "jackhammer": {
+        "precision": 0.698019801980198,
+        "recall": 0.31403118040089084,
+        "f1-score": 0.43317972350230416,
+        "support": 449.0
+    },
+    "police": {
+        "precision": 1.0,
+        "recall": 0.8953229398663697,
+        "f1-score": 0.9447708578143361,
+        "support": 449.0
+    },
+    "street_music": {
+        "precision": 0.9369627507163324,
+        "recall": 0.7282850779510023,
+        "f1-score": 0.8195488721804511,
+        "support": 449.0
+    },
+    "traffic": {
+        "precision": 1.0,
+        "recall": 0.9688195991091314,
+        "f1-score": 0.9841628959276018,
+        "support": 449.0
+    },
+    "accuracy": 0.7621417539042389,
+    "macro avg": {
+        "precision": 0.8052954365919309,
+        "recall": 0.7555776165185966,
+        "f1-score": 0.7631168167662854,
+        "support": 5827.0
+    },
+    "weighted avg": {
+        "precision": 0.8031255492158303,
+        "recall": 0.7621417539042389,
+        "f1-score": 0.765955525180901,
+        "support": 5827.0
+    }
+}
