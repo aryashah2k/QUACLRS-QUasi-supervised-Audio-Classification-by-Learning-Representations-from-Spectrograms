@@ -1,0 +1,93 @@
+{
+    "air_conditioner": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "ambulance": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "car_horn": {
+        "precision": 0.07714776632302406,
+        "recall": 1.0,
+        "f1-score": 0.14324453660870953,
+        "support": 449.0
+    },
+    "children_playing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "dog_bark": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "drilling": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "engine_idling": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "firetruck": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "gun_shot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 432.0
+    },
+    "jackhammer": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "police": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "street_music": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "traffic": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 449.0
+    },
+    "accuracy": 0.07714776632302406,
+    "macro avg": {
+        "precision": 0.005934443563309543,
+        "recall": 0.07692307692307693,
+        "f1-score": 0.011018810508362271,
+        "support": 5820.0
+    },
+    "weighted avg": {
+        "precision": 0.005951777848631925,
+        "recall": 0.07714776632302406,
+        "f1-score": 0.01105099603733859,
+        "support": 5820.0
+    }
+}

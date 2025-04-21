@@ -1,0 +1,110 @@
+{
+    "fold": 3,
+    "best_epoch": 1,
+    "train_loss": 0.15978114029652443,
+    "val_loss": 1.480410067912829,
+    "test_loss": 1.5340876849148637,
+    "train_accuracy": 95.92568589328148,
+    "val_accuracy": 77.10055096418733,
+    "test_accuracy": 71.70103092783505,
+    "classification_report": {
+        "air_conditioner": {
+            "precision": 0.24378109452736318,
+            "recall": 0.1091314031180401,
+            "f1-score": 0.15076923076923077,
+            "support": 449.0
+        },
+        "ambulance": {
+            "precision": 0.9976744186046511,
+            "recall": 0.955456570155902,
+            "f1-score": 0.9761092150170648,
+            "support": 449.0
+        },
+        "car_horn": {
+            "precision": 0.8808510638297873,
+            "recall": 0.4610244988864143,
+            "f1-score": 0.6052631578947368,
+            "support": 449.0
+        },
+        "children_playing": {
+            "precision": 0.6962264150943396,
+            "recall": 0.821826280623608,
+            "f1-score": 0.7538304392236976,
+            "support": 449.0
+        },
+        "dog_bark": {
+            "precision": 0.8649289099526066,
+            "recall": 0.8129175946547884,
+            "f1-score": 0.8381171067738232,
+            "support": 449.0
+        },
+        "drilling": {
+            "precision": 0.4493927125506073,
+            "recall": 0.9888641425389755,
+            "f1-score": 0.6179540709812108,
+            "support": 449.0
+        },
+        "engine_idling": {
+            "precision": 0.49759615384615385,
+            "recall": 0.4610244988864143,
+            "f1-score": 0.47861271676300576,
+            "support": 449.0
+        },
+        "firetruck": {
+            "precision": 0.9352818371607515,
+            "recall": 0.9977728285077951,
+            "f1-score": 0.9655172413793104,
+            "support": 449.0
+        },
+        "gun_shot": {
+            "precision": 0.9812206572769953,
+            "recall": 0.9675925925925926,
+            "f1-score": 0.9743589743589743,
+            "support": 432.0
+        },
+        "jackhammer": {
+            "precision": 0.7380952380952381,
+            "recall": 0.13808463251670378,
+            "f1-score": 0.2326454033771107,
+            "support": 449.0
+        },
+        "police": {
+            "precision": 0.9887892376681614,
+            "recall": 0.9821826280623608,
+            "f1-score": 0.9854748603351955,
+            "support": 449.0
+        },
+        "street_music": {
+            "precision": 0.4074585635359116,
+            "recall": 0.6570155902004454,
+            "f1-score": 0.5029838022165388,
+            "support": 449.0
+        },
+        "traffic": {
+            "precision": 1.0,
+            "recall": 0.977728285077951,
+            "f1-score": 0.9887387387387387,
+            "support": 449.0
+        },
+        "accuracy": 0.7170103092783505,
+        "macro avg": {
+            "precision": 0.7447151001648128,
+            "recall": 0.717740118909384,
+            "f1-score": 0.697721150602203,
+            "support": 5820.0
+        },
+        "weighted avg": {
+            "precision": 0.7440242763725607,
+            "recall": 0.7170103092783505,
+            "f1-score": 0.6969131019761092,
+            "support": 5820.0
+        }
+    },
+    "paths": {
+        "best_model": "output/inception/fold_3/checkpoint_epoch_1.pth",
+        "confusion_matrix": "output/inception/fold_3/plots/confusion_matrix.png",
+        "roc_curves": "output/inception/fold_3/plots/roc_curves.png",
+        "classification_report": "output/inception/fold_3/classification_report.json",
+        "grad_cam_dir": "output/inception/fold_3/grad_cam"
+    }
+}
