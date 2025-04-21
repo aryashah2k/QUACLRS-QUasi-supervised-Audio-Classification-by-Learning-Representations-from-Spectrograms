@@ -1,0 +1,16 @@
+{
+  "gothamherobat@gmail.com": {
+    "email": "gothamherobat@gmail.com",
+    "name": "Batman",
+    "password_hash": "60fe74406e7f353ed979f350f2fbb6a2e8690a5fa7d1b0c32983d1d8b3f95f67",
+    "created_at": "2025-04-20T16:57:55.089156",
+    "user_id": "2b8ee46d-3a9c-4092-8d66-48abeae09a2e"
+  },
+  "chaky@ait.com": {
+    "email": "chaky@ait.com",
+    "name": "Chaky",
+    "password_hash": "60fe74406e7f353ed979f350f2fbb6a2e8690a5fa7d1b0c32983d1d8b3f95f67",
+    "created_at": "2025-04-21T08:35:38.337666",
+    "user_id": "3e999dc7-deaf-4b49-bf65-ba1570f5de8a"
+  }
+}

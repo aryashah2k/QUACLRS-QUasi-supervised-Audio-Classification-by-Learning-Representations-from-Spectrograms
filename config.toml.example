@@ -1,0 +1,28 @@
+[[credit_packages]]
+id = "basic"
+credits = 100
+price_usd = 5.99
+description = "Basic Package"
+
+[[credit_packages]]
+id = "standard"
+credits = 500
+price_usd = 19.99
+description = "Standard Package"
+
+[[credit_packages]]
+id = "premium"
+credits = 2000
+price_usd = 49.99
+description = "Premium Package"
+
+[app]
+name = "QUACLRS Audio Classifier"
+default_credits = 100
+credits_per_inference = 5
+
+[app.stripe]
+test_public_key = "pk_test_51OxTOpHJY6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+test_secret_key = "sk_test_51OxTOpHJY6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+credit_price_id = "price_XXXXXXXXXXXXXXXXXXXXXXXX"
+webhook_secret = "whsec_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"

@@ -1,0 +1,3 @@
+"""
+QUACLRS model module initialization
+"""
