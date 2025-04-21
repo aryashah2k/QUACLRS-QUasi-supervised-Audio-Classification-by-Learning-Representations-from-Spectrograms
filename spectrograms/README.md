@@ -1,1 +1,0 @@
-The dataset dstributed in 10 folds is placed here, once downloaded form the drive
