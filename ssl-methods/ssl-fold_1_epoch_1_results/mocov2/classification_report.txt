@@ -1,0 +1,20 @@
+Classification Report:
+                  precision    recall  f1-score   support
+
+ air_conditioner       0.86      0.71      0.78       100
+       ambulance       0.96      0.60      0.74        40
+        car_horn       0.25      0.58      0.35        36
+children_playing       0.71      0.67      0.69       100
+        dog_bark       0.95      0.57      0.71       100
+        drilling       0.38      0.47      0.42       100
+   engine_idling       0.35      0.54      0.42        96
+       firetruck       0.47      0.68      0.56        40
+        gun_shot       0.69      0.26      0.38        35
+      jackhammer       0.90      0.85      0.88       120
+          police       0.48      0.89      0.62        46
+    street_music       1.00      0.19      0.32       100
+         traffic       0.81      0.91      0.86        43
+
+        accuracy                           0.60       956
+       macro avg       0.68      0.61      0.59       956
+    weighted avg       0.71      0.60      0.61       956

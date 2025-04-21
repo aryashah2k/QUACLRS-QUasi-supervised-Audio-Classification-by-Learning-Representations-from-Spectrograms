@@ -1,0 +1,26 @@
+Classification Report:
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/jupyter-st125462/.local/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+                  precision    recall  f1-score   support
+
+ air_conditioner       0.49      0.24      0.32       100
+       ambulance       0.18      0.17      0.18        40
+        car_horn       0.00      0.00      0.00        36
+children_playing       0.50      0.16      0.24       100
+        dog_bark       0.81      0.56      0.66       100
+        drilling       0.39      0.09      0.15       100
+   engine_idling       0.14      0.21      0.17        96
+       firetruck       0.28      0.88      0.42        40
+        gun_shot       0.23      0.69      0.34        35
+      jackhammer       1.00      0.18      0.31       120
+          police       0.00      0.00      0.00        46
+    street_music       1.00      0.06      0.11       100
+         traffic       0.11      0.88      0.20        43
+
+        accuracy                           0.27       956
+       macro avg       0.39      0.32      0.24       956
+    weighted avg       0.51      0.27      0.26       956
